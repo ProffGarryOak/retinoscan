@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Signin.css" />
+		<title>RetinoScan - Sign In / Sign Up</title>
+	</head>
+	<body>
+		<div class="cont">
+			<button class="easyview-toggle" onclick="toggleEasyView()">
+				EasyView Mode
+			</button>
+			<div class="form sign-in">
+				<h2>Welcome to RetinoScan</h2>
+				<label>
+					<span>Email</span>
+					<input type="email" />
+				</label>
+				<label>
+					<span>Password</span>
+					<input type="password" />
+				</label>
+				<p class="forgot-pass">Forgot password?</p>
+				<button type="button" class="submit" onclick="goToAppointment()">
+					Sign In
+				</button>
+			</div>
+			<div class="sub-cont">
+				<div class="img">
+					<div class="img__text m--up">
+						<h3>Don't have an account? Please Sign up!</h3>
+					</div>
+					<div class="img__text m--in">
+						<h3>If you already have an account, just sign in.</h3>
+					</div>
+					<div class="img__btn">
+						<span class="m--up">Sign Up</span>
+						<span class="m--in">Sign In</span>
+					</div>
+				</div>
+				<div class="form sign-up">
+					<h2>Create your Account</h2>
+					<label>
+						<span>Full Name</span>
+						<input type="text" />
+					</label>
+					<label>
+						<span>Date of Birth</span>
+						<input type="date" />
+					</label>
+					<label>
+						<span>Gender</span>
+						<select>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							<option value="Other">Other</option>
+						</select>
+					</label>
+					<label>
+						<span>Contact Number</span>
+						<input type="tel" />
+					</label>
+					<label>
+						<span>Email Address</span>
+						<input type="email" />
+					</label>
+					<label>
+						<span>Address</span>
+						<input type="text" />
+					</label>
+					<label>
+						<span>Password</span>
+						<input type="password" />
+					</label>
+					<button type="button" class="submit" onclick="goToAppointment()">
+						Sign Up
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="Signin.js"></script>
+	</body>
+</html>

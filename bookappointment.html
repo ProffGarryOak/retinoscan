@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RetinoScan - Book Appointment</title>
+		<link rel="stylesheet" href="BookAppointment.css" />
+	</head>
+	<body>
+		<div class="cont">
+			<div class="form">
+				<h2>Book an Appointment</h2>
+
+				<h3>Appointment Details</h3>
+				<label>
+					<span>Preferred Date</span>
+					<input type="date" class="input-date" />
+				</label>
+				<label>
+					<span>Preferred Time</span>
+					<input type="time" class="input-time" />
+				</label>
+				<label>
+					<span>Type of Appointment</span>
+					<div class="radio-group">
+						<input
+							type="radio"
+							id="first-time"
+							name="appointment-type"
+							value="First-time Visit"
+							class="radio-input"
+						/>
+						<label for="first-time" class="radio-label">First-time Visit</label>
+
+						<input
+							type="radio"
+							id="follow-up"
+							name="appointment-type"
+							value="Follow-up Visit"
+							class="radio-input"
+						/>
+						<label for="follow-up" class="radio-label">Follow-up Visit</label>
+					</div>
+				</label>
+				<label>
+					<span>Doctor's Name (if applicable)</span>
+					<input type="text" placeholder="Optional" class="input-text" />
+				</label>
+
+				<h3>Medical Information</h3>
+				<div class="reason">
+					<label>
+						<p><span>Reason for Appointment</span></p>
+						<br />
+						<select class="input-select">
+							<option>Routine Eye Checkup</option>
+							<option>Vision Problem</option>
+							<option>Eye Pain or Irritation</option>
+							<option>Glasses/Contact Lens Renewal</option>
+							<option>Eye Surgery Consultation</option>
+							<option>Other</option>
+						</select>
+					</label>
+				</div>
+				<div class="glasses">
+					<label>
+						<span>Do you wear glasses or contact lenses?</span>
+						<div class="radio-group">
+							<input
+								type="radio"
+								id="glasses-yes"
+								name="glasses"
+								value="Yes"
+								class="radio-input"
+							/>
+							<label for="glasses-yes" class="radio-label">Yes</label>
+
+							<input
+								type="radio"
+								id="glasses-no"
+								name="glasses"
+								value="No"
+								class="radio-input"
+							/>
+							<label for="glasses-no" class="radio-label">No</label>
+						</div>
+					</label>
+				</div>
+				<span>Have you experienced any of the following recently?</span>
+
+				<div class="checkbox-group">
+					<div class="checkbox-wrapper-46">
+						<input type="checkbox" id="blurred-vision" class="inp-cbx" />
+						<label for="blurred-vision" class="cbx">
+							<span>
+								<svg viewBox="0 0 12 10" height="10px" width="12px">
+									<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+								</svg>
+							</span>
+							<span>Blurred Vision</span>
+						</label>
+					</div>
+					<div class="checkbox-wrapper-46">
+						<input type="checkbox" id="eye-pain" class="inp-cbx" />
+						<label for="eye-pain" class="cbx">
+							<span>
+								<svg viewBox="0 0 12 10" height="10px" width="12px">
+									<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+								</svg>
+							</span>
+							<span>Eye Pain</span>
+						</label>
+					</div>
+					<div class="checkbox-wrapper-46">
+						<input type="checkbox" id="redness-swelling" class="inp-cbx" />
+						<label for="redness-swelling" class="cbx">
+							<span>
+								<svg viewBox="0 0 12 10" height="10px" width="12px">
+									<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+								</svg>
+							</span>
+							<span>Redness or Swelling</span>
+						</label>
+					</div>
+					<div class="checkbox-wrapper-46">
+						<input type="checkbox" id="light-sensitivity" class="inp-cbx" />
+						<label for="light-sensitivity" class="cbx">
+							<span>
+								<svg viewBox="0 0 12 10" height="10px" width="12px">
+									<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+								</svg>
+							</span>
+							<span>Sensitivity to Light</span>
+						</label>
+					</div>
+					<div class="checkbox-wrapper-46">
+						<input type="checkbox" id="headaches" class="inp-cbx" />
+						<label for="headaches" class="cbx">
+							<span>
+								<svg viewBox="0 0 12 10" height="10px" width="12px">
+									<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+								</svg>
+							</span>
+							<span>Headaches</span>
+						</label>
+					</div>
+					<div class="checkbox-wrapper-46">
+						<input type="checkbox" id="floaters" class="inp-cbx" />
+						<label for="floaters" class="cbx">
+							<span>
+								<svg viewBox="0 0 12 10" height="10px" width="12px">
+									<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+								</svg>
+							</span>
+							<span>Flashes of Light or Floaters</span>
+						</label>
+					</div>
+				</div>
+
+				<label>
+					<span>Do you have a history of eye conditions or surgeries?</span>
+					<div class="radio-group">
+						<input
+							type="radio"
+							id="eye-history-yes"
+							name="eye-history"
+							value="Yes"
+							class="radio-input"
+						/>
+						<label for="eye-history-yes" class="radio-label">Yes</label>
+
+						<input
+							type="radio"
+							id="eye-history-no"
+							name="eye-history"
+							value="No"
+							class="radio-input"
+						/>
+						<label for="eye-history-no" class="radio-label">No</label>
+					</div>
+				</label>
+
+				<h3>Insurance & Payment Information</h3>
+				<label>
+					<span>Do you have health insurance?</span>
+					<div class="radio-group">
+						<input
+							type="radio"
+							id="insurance-yes"
+							name="insurance"
+							value="Yes"
+							class="radio-input"
+						/>
+						<label for="insurance-yes" class="radio-label">Yes</label>
+
+						<input
+							type="radio"
+							id="insurance-no"
+							name="insurance"
+							value="No"
+							class="radio-input"
+						/>
+						<label for="insurance-no" class="radio-label">No</label>
+					</div>
+				</label>
+
+				<label>
+					<span>Preferred Payment Method</span>
+					<div class="radio-group">
+						<input
+							type="radio"
+							id="payment-cash"
+							name="payment"
+							value="Cash"
+							class="radio-input"
+						/>
+						<label for="payment-cash" class="radio-label">Cash</label>
+
+						<input
+							type="radio"
+							id="payment-card"
+							name="payment"
+							value="Credit/Debit Card"
+							class="radio-input"
+						/>
+						<label for="payment-card" class="radio-label"
+							>Credit/Debit Card</label
+						>
+
+						<input
+							type="radio"
+							id="payment-insurance"
+							name="payment"
+							value="Insurance"
+							class="radio-input"
+						/>
+						<label for="payment-insurance" class="radio-label">Insurance</label>
+					</div>
+				</label>
+
+				<h3>Special Requests or Additional Comments</h3>
+				<label>
+					<textarea
+						placeholder="Any other information you'd like to provide"
+						class="textarea"
+					></textarea>
+				</label>
+
+				<button type="submit" class="submit" onclick="submitapp()">
+					Submit Appointment
+				</button>
+			</div>
+		</div>
+		<script>
+			function submitapp() {
+				const date = document.querySelector(".input-date").value;
+				const time = document.querySelector(".input-time").value;
+				const reason = document.querySelector(".input-select").value; // Change to the appropriate element to get the reason
+
+				// Redirect to booked.html with the query parameters
+				window.location.href = `booked.html?reason=${encodeURIComponent(
+					reason
+				)}&date=${encodeURIComponent(date)}&time=${encodeURIComponent(time)}`;
+			}
+		</script>
+	</body>
+</html>

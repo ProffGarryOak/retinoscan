@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RetinoScan - Appointment Confirmation</title>
+		<link rel="stylesheet" href="Booked.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="card">
+				<h2>Thank You for Booking!</h2>
+				<h3>Appointment Details</h3>
+				<p>
+					<strong>Reason for Appointment:</strong>
+					<span id="appointment-reason"></span>
+				</p>
+				<p><strong>Date:</strong> <span id="appointment-date"></span></p>
+				<p><strong>Time:</strong> <span id="appointment-time"></span></p>
+				<button onclick="goBack()">Book Another Appointment</button>
+			</div>
+		</div>
+		<script>
+			function getQueryParams() {
+				const params = new URLSearchParams(window.location.search);
+				return {
+					reason: params.get("reason"),
+					date: params.get("date"),
+					time: params.get("time"),
+				};
+			}
+
+			function displayAppointmentDetails() {
+				const { reason, date, time } = getQueryParams();
+				document.getElementById("appointment-reason").innerText = reason;
+				document.getElementById("appointment-date").innerText = date;
+				document.getElementById("appointment-time").innerText = time;
+			}
+
+			function goBack() {
+				window.history.back();
+			}
+
+			// Call the function to display details on page load
+			window.onload = displayAppointmentDetails;
+		</script>
+	</body>
+</html>
