@@ -34,18 +34,3 @@ Welcome to the RetinoScan website! This platform is designed to facilitate easy 
 10. **Confirmation Redirect**  
     After submission, users are seamlessly redirected to a confirmation page, providing clarity on their appointment details.
 
-## Getting Started
-
-To get started with the RetinoScan website, clone the repository and open the `index.html` file in your preferred web browser.
-
-## Contributing
-
-We welcome contributions to enhance the RetinoScan website. Please feel free to open issues or submit pull requests.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any inquiries, please contact us at [your-email@example.com](mailto:your-email@example.com).
